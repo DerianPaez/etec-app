@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-const FooterStyled = styled.div`
-  /*  */
+const FooterStyled = styled.footer`
+
 `
 const Footer = () => {
   return (
     <FooterStyled>
-      <h1>Footer</h1>
+      
     </FooterStyled>
   )
 }
