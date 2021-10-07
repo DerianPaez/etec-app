@@ -6,16 +6,16 @@ import { useState } from 'react'
 import SocialMedia from './SocialMedia'
 
 const HeaderStyled = styled.header`
-  .header-container {
-    display: grid;
-    grid-template-columns: min-content min-content;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5%;
-    background-color: var(--main-color);
-    color: #fff;
-    z-index: 1000;
-  }
+  display: grid;
+  grid-template-columns: min-content min-content;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: var(--main-color);
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
 
   .menu-open {
     display: grid;
@@ -24,7 +24,7 @@ const HeaderStyled = styled.header`
 
   .menu-nav{
     background-color: var(--main-color);
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     top: ${({ isMenuOpen }) => (isMenuOpen ? '0' : '-100vh')};
@@ -62,9 +62,8 @@ const HeaderStyled = styled.header`
   }
 
   @media (min-width: 768px) {
-    .header-container{
-      grid-template-columns: repeat(3, 1fr);
-    }
+    grid-template-columns: repeat(3, 1fr);
+
     .menu-open, .menu-close {
       display: none;
     }
@@ -131,7 +130,6 @@ const Header = () => {
 
   return (
     <HeaderStyled isMenuOpen={state}>
-      <div className="header-container">
         <figure className="logo-container">
           <span>ETEC</span>
         </figure>        
@@ -166,7 +164,6 @@ const Header = () => {
         </nav>
 
         <SocialMedia/>
-      </div>
     </HeaderStyled>
   )
 }

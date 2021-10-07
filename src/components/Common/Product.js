@@ -7,6 +7,11 @@ const ProductStyled = styled.div`
   justify-content: stretch;
   gap: 20px;
 
+  .product-card {
+    width: 100%;
+    height: auto;
+  }
+
   .product-image {
     display: block;
     width: 100%;
@@ -21,11 +26,13 @@ const ProductStyled = styled.div`
 const Product = ({ image, title, price }) => {
   return (
     <ProductStyled>
-      <figure className="product-image">
-        <img src={image} alt={title}/>
-      </figure>
-      <h4>{title}</h4>
-      <p>{price}</p>
+      <div className="product-card">
+        <figure className="product-image">
+          <img src={image} alt={title}/>
+        </figure>
+        <h4>{title}</h4>
+        <p>{price}</p>
+      </div>
     </ProductStyled>
   )
 }
