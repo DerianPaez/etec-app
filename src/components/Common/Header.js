@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import styled from 'styled-components'
 import { Link, useHistory } from 'react-router-dom'
 import menu from '../../static/icons/menu.svg'
@@ -132,16 +133,16 @@ const Header = () => {
     <HeaderStyled isMenuOpen={state}>
         <figure className="logo-container">
           <span>ETEC</span>
-        </figure>        
+        </figure>
 
         <figure onClick={handleMenuOpen} className="menu-open">
           <img src={menu} alt="Menu Icon" />
         </figure>
-        
+
         <nav className="menu-nav">
           <figure onClick={handleMenuClose} className="menu-close">
             <img src={close} alt="Menu Icon Close" />
-          </figure> 
+          </figure>
 
           <ul className="menu">
             <li><Link to="/">Inicio</Link></li>
