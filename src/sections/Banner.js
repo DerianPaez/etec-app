@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Button from '../components/Common/Button'
 import banner from '../static/images/banner.jpg'
 
 const BannerStyled = styled.section`
@@ -9,6 +10,9 @@ const BannerStyled = styled.section`
   height: 80vh;
   display: grid;
   align-items: center;
+  .banner-content {
+    color: #ffffff;
+  }
 `
 const Banner = () => {
   return (
@@ -17,7 +21,7 @@ const Banner = () => {
         <div className="banner-content">
           <h1>Descubre nuestra colección</h1>
           <p>Estamos ofreciendo un 20% de descuento</p>
-          <button>Contácto</button>
+          <Button>Contácto</Button>
         </div>
       </div>
     </BannerStyled>

@@ -5,6 +5,7 @@ import menu from '../../static/icons/menu.svg'
 import close from '../../static/icons/close.svg'
 import { useState } from 'react'
 import SocialMedia from './SocialMedia'
+import Logo from './Logo'
 
 const HeaderStyled = styled.header`
   display: grid;
@@ -21,6 +22,10 @@ const HeaderStyled = styled.header`
   .menu-open {
     display: grid;
     align-items: center;
+    width: 100%;
+    img {
+      width: 28px;
+    }
   }
 
   .menu-nav{
@@ -43,6 +48,9 @@ const HeaderStyled = styled.header`
     position: absolute;
     top: 10px;
     right: 5%;
+    img {
+      width: 28px;
+    }
   }
 
   .menu {
@@ -83,7 +91,7 @@ const HeaderStyled = styled.header`
 
   @media (min-width: 1024px) {
     .menu a {
-      font-size: 1.3em;
+      font-size: 1.1em;
     }
   }
 `
@@ -131,9 +139,7 @@ const Header = () => {
 
   return (
     <HeaderStyled isMenuOpen={state}>
-        <figure className="logo-container">
-          <span>ETEC</span>
-        </figure>
+        <Logo/>
 
         <figure onClick={handleMenuOpen} className="menu-open">
           <img src={menu} alt="Menu Icon" />

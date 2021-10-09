@@ -1,16 +1,23 @@
 import styled from 'styled-components'
 
-const ButtonStyled = styled.div`
+const ButtonStyled = styled.button`
   background-color: var(--main-color);
-  border-radius: 5px;
-  padding: 5px, 10px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  padding: 5px 15px;
   cursor: pointer;
-  width: 50px;
+  color: #ffffff;
 `
-const Button = (btnText) => {
+const Button = ({ children, type, action }) => {
+  const handleClick = () => {
+    if (action) {
+      action()
+    }
+  }
   return (
-    <ButtonStyled>
-      {btnText}
+    <ButtonStyled type={type} onClick={handleClick}>
+      {children}
     </ButtonStyled>
   )
 }
