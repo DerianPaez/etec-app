@@ -25,7 +25,7 @@ const ProductStyled = styled.div`
     }
   }
 `
-const Product = ({ image, title, price }) => {
+const Product = ({ image, title, price, discount }) => {
   return (
     <ProductStyled>
       <figure className="product-image">

@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import cream from '../static/images/cream.jpg'
+import watch from '../static/images/watch.jpg'
 
 const PublicityStyled = styled.div`
   .publicity-container {
-    background-image: url(${cream});
+    background-image: url(${watch});
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
