@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Button from '../components/Common/Button'
 import watch from '../static/images/watch.jpg'
 
 const PublicityStyled = styled.div`
@@ -7,7 +8,11 @@ const PublicityStyled = styled.div`
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    padding: 30px 20px;
+    padding: 60px 20px;
+    color: #ffffff;
+    p {
+      margin-bottom: 5px;
+    }
   }
 `
 const Publicity = () => {
@@ -17,7 +22,7 @@ const Publicity = () => {
         <div className="publicity-container">
           <h2>Envios a todo el Ecuador</h2>
           <p>35% de descuento las 10 primeras personas</p>
-          <button>Comprar</button>
+          <Button>Comprar</Button>
         </div>
       </div>
     </PublicityStyled>

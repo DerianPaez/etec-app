@@ -3,6 +3,8 @@ import Banner from '../../sections/Banner'
 import Promotion from '../../sections/Promotion'
 import FeaturedProducts from '../../sections/FeaturedProducts'
 import Publicity from '../../sections/Publicity'
+import NewProducts from '../../sections/NewProducts'
+import GalleryProducts from '../../sections/GalleryProducts'
 
 const HomeStyled = styled.div`
   /*  */
@@ -14,7 +16,8 @@ const Home = () => {
       <Promotion/>
       <FeaturedProducts/>
       <Publicity/>
-      {/* Mas secciones ;) */}
+      <NewProducts/>
+      <GalleryProducts/>
     </HomeStyled>
   )
 }
