@@ -61,6 +61,9 @@ const HeaderStyled = styled.header`
     align-items: center;
     text-align: center;
     width: 100%;
+    a {
+      font-weight: 600;
+    }
   }
 
   .social-media-nav {
@@ -91,7 +94,7 @@ const HeaderStyled = styled.header`
 
   @media (min-width: 1024px) {
     .menu a {
-      font-size: 1.1em;
+      font-size: 1em;
     }
   }
 `

@@ -5,6 +5,7 @@ const LogoStyled = styled.div`
     font-size: 24px;
     line-height: 2rem;
     letter-spacing: .3rem;
+    font-weight: 700;
   }
 `
 const Logo = () => {

@@ -7,13 +7,18 @@ const PromotionStyled = styled.section`
   padding: 0;
   margin-top: -50px;
   width: 100%;
-  & .promo-content {
+  .promo-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     background-color: var(--secundary-color);
-    padding: 20px;
-    gap: 20px;
-    box-shadow: 0px 5px 7px 4px #00000066;
+    padding: 15px;
+    gap: 15px;
+    /* box-shadow: 0px 5px 7px 4px #00000066; */
+    box-shadow: 0px 3px 20px 2px #00000066;
+    @media (min-width: 768px) {
+      padding: 20px;
+      gap: 20px;
+    }
   }
 `
 const Promotion = () => {
@@ -22,7 +27,7 @@ const Promotion = () => {
       <div className="wrapper">
         <div className="promo-content">
           <Promo background={discount} title="Nuevos productos" text="35% de descuento en dishes"/>
-          <Promo background={discount2} title="Mira nuestra colección" text="Obten hasta un 50% de descuento"/>
+          <Promo background={discount2} title="Nueva colección" text="Obten hasta un 50% de descuento"/>
         </div>
       </div>
     </PromotionStyled>

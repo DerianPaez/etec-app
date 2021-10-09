@@ -1,13 +1,15 @@
 import styled from 'styled-components'
 
 const ButtonStyled = styled.button`
+  width: min-content;
   background-color: var(--main-color);
-  border-radius: 25px;
   outline: none;
   border: none;
-  padding: 5px 15px;
   cursor: pointer;
   color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 500;
 `
 const Button = ({ children, type, action }) => {
   const handleClick = () => {

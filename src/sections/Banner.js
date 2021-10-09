@@ -11,8 +11,16 @@ const BannerStyled = styled.section`
   display: grid;
   align-items: center;
   .banner-content {
-    color: #ffffff;
+    p {
+      margin-bottom: 10px;
+    }
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 2.4em;
+      }
+    }
   }
+
 `
 const Banner = () => {
   return (

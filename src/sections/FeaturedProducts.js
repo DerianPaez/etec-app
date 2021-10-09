@@ -9,7 +9,7 @@ const FeaturedProducts = () => {
     <FeaturedProductsStyled>
       <div className="wrapper">
         <div className="featured-products-content">
-          <h3>Productos Destacados</h3>
+          <h2>Productos Destacados</h2>
           <FeaturedProductList />
         </div>
       </div>
