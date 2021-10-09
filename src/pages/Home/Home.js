@@ -5,6 +5,7 @@ import FeaturedProducts from '../../sections/FeaturedProducts'
 import Publicity from '../../sections/Publicity'
 import NewProducts from '../../sections/NewProducts'
 import GalleryProducts from '../../sections/GalleryProducts'
+import Contact from '../../sections/Contact'
 
 const HomeStyled = styled.div`
   /*  */
@@ -18,6 +19,7 @@ const Home = () => {
       <Publicity/>
       <NewProducts/>
       <GalleryProducts/>
+      <Contact/>
     </HomeStyled>
   )
 }

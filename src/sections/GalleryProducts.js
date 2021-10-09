@@ -3,7 +3,7 @@ import GalleryElement from '../components/Common/GalleryElement'
 
 import cream from '../static/images/cream.jpg'
 
-const GalleryProductsStyled = styled.div`
+const GalleryProductsStyled = styled.section`
   .gallery-products-container {
     display: grid;
     grid-gap: 20px;

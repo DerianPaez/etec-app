@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Button from '../components/Common/Button'
 import watch from '../static/images/watch.jpg'
 
-const PublicityStyled = styled.div`
+const PublicityStyled = styled.section`
   .publicity-container {
     background-image: url(${watch});
     background-size: cover;
