@@ -4,7 +4,7 @@ import champu from '../../static/images/champu.jpg'
 
 const FeaturedProductListStyled = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: min-content;
   justify-content: stretch;
   gap: 20px;

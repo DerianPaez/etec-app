@@ -3,11 +3,14 @@ import Button from '../components/Common/Button'
 
 const ContactStyled = styled.section`
   input, textarea {
-    border: 2px solid #000;
+    border: none;
+    border-bottom: 1px solid #000;
     outline: none;
     width: 100%;
-    padding: 3px 5px;
+    padding: 10px 5px;
     resize: none;
+    outline: none;
+    /* border-radius: 5px; */
   }
 
   .form {
@@ -26,7 +29,6 @@ const ContactStyled = styled.section`
     justify-content: center;
     gap: 10px;
   }
-
 `
 const Contact = () => {
   return (
@@ -40,10 +42,10 @@ const Contact = () => {
                 <input type="tel" name="Celular" placeholder="Celular" required/>
               </div>
               <input className="botton-1" type="email" name="Email" placeholder="Email"/>
-              <textarea className="bottom-2" rows="5" name="Mensaje" placeholder="Mensaje" required></textarea>
+              <textarea className="bottom-2" rows="3" name="Mensaje" placeholder="Mensaje" required></textarea>
               <div className="form-btn">
                 <Button>Enviar</Button>
-                <Button>Reset</Button>
+                <Button className="btn-reset">Reset</Button>
               </div>
             </form>
         </div>
