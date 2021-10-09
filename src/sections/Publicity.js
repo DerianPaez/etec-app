@@ -1,7 +1,14 @@
 import styled from 'styled-components'
+import cream from '../static/images/cream.jpg'
 
 const PublicityStyled = styled.div`
-  /*  */
+  .publicity-container {
+    background-image: url(${cream});
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding: 30px 20px;
+  }
 `
 const Publicity = () => {
   return (
