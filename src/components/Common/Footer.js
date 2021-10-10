@@ -9,16 +9,25 @@ const FooterStyled = styled.footer`
 
   .footer-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     gap: 20px;
     padding: 50px 0;
     text-align: center;
+    @media (min-width: 630px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
-  .social-media figure {
-    width: 26px;
-    height: 25px;
+  .social-media {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    figure {
+      width: 26px;
+      height: 25px;
+    }
   }
 
   .footer-rights {
@@ -26,6 +35,9 @@ const FooterStyled = styled.footer`
     text-align: center;
     border-top: 1px solid #fff;
     padding: 10px 0;
+    p {
+      font-size: .8em;
+    }
   }
 `
 
@@ -76,13 +88,13 @@ const Footer = () => {
           <div className="social-media">
             <h4>Redes sociales</h4>
             <figure>
-              <a href="" target="_blank">{facebook}</a>
+              <Link to="">{facebook}</Link>
             </figure>
             <figure>
-              <a href="" target="_blank">{instagram}</a>
+              <Link to="">{instagram}</Link>
             </figure>
             <figure>
-              <a href="" target="_blank">{whatsapp}</a>
+              <Link to="">{whatsapp}</Link>
             </figure>
           </div>
           <div className="footer-contact">
@@ -92,9 +104,9 @@ const Footer = () => {
             <p>+593 99 1969 410</p>
           </div>
         </div>
-      </div> 
-      <div class="footer-rights">
-        <span>© 2021 Copyright ETEC All rights reserved</span>
+      </div>
+      <div className="footer-rights">
+        <p>© 2021 Copyright ETEC All rights reserved</p>
       </div>
     </FooterStyled>
   )

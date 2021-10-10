@@ -1,6 +1,9 @@
 import styled from 'styled-components'
+import Link from './Link'
 
 const LogoStyled = styled.div`
+  user-select: none;
+  cursor: pointer;
   p {
     font-size: 24px;
     line-height: 2rem;
@@ -10,9 +13,11 @@ const LogoStyled = styled.div`
 `
 const Logo = () => {
   return (
-    <LogoStyled>
-      <p>ETEC</p>
-    </LogoStyled>
+    <Link to="/">
+      <LogoStyled>
+        <p>ETEC</p>
+      </LogoStyled>
+    </Link>
   )
 }
 

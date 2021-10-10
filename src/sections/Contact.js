@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Button from '../components/Common/Button'
 
 const ContactStyled = styled.section`
+  padding-top: 60px;
   input, textarea {
     border: none;
     border-bottom: 1px solid #000;
@@ -32,7 +33,7 @@ const ContactStyled = styled.section`
 `
 const Contact = () => {
   return (
-    <ContactStyled>
+    <ContactStyled id="contacto-id">
       <div className="wrapper">
         <div className="contact-content">
           <h2>Contáctanos</h2>
