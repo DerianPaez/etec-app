@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import Values from '../../sections/About/Values'
+import ChooseUs from '../../sections/About/ChooseUs'
 
 const AboutStyled = styled.div`
   /*  */
@@ -6,7 +8,8 @@ const AboutStyled = styled.div`
 const About = () => {
   return (
     <AboutStyled>
-      <h1>Pagina About</h1>
+      <Values/>
+      <ChooseUs/>
     </AboutStyled>
   )
 }

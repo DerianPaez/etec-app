@@ -101,6 +101,7 @@ const HeaderStyled = styled.header`
       top: 0;
       position: static;
       height: auto;
+      background: none;
     }
     .menu {
       grid-auto-flow: column;
