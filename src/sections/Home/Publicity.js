@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import Button from '../components/Common/Button'
-import watch from '../static/images/watch.jpg'
+import Button from '../../components/Common/Button'
+import watch from '../../static/images/watch.jpg'
 
 const PublicityStyled = styled.section`
   .publicity-container {

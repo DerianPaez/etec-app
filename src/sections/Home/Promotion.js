@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import Promo from '../components/Common/Promo'
-import discount from '../static/images/discount.jpg'
-import discount2 from '../static/images/discount2.jpg'
+import Promo from '../../components/Common/Promo'
+import discount from '../../static/images/discount.jpg'
+import discount2 from '../../static/images/discount2.jpg'
 
 const PromotionStyled = styled.section`
   padding: 0;

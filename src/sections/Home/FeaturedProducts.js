@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import FeaturedProductList from '../components/Lists/FeaturedProductList'
+import FeaturedProductList from '../../components/Lists/FeaturedProductList'
 
 const FeaturedProductsStyled = styled.section`
   /*  */

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import GalleryElement from '../components/Common/GalleryElement'
-
-import cream from '../static/images/cream.jpg'
+import GalleryElement from '../../components/Common/GalleryElement'
+import cream from '../../static/images/cream.jpg'
 
 const GalleryProductsStyled = styled.section`
   .gallery-products-container {

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Button from '../../components/Common/Button'
-import banner from '../static/images/banner.jpg'
+import banner from '../../static/images/banner.jpg'
 
 const BannerStyled = styled.section`
   background-image: url(${banner});
