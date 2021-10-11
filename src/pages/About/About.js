@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import We from '../../sections/About/We'
 
 const AboutStyled = styled.div`
   /*  */
@@ -6,7 +7,7 @@ const AboutStyled = styled.div`
 const About = () => {
   return (
     <AboutStyled>
-      <h1>Pagina About</h1>
+      <We/>
     </AboutStyled>
   )
 }
