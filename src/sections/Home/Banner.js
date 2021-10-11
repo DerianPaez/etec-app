@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Button from '../components/Common/Button'
+import Button from '../../components/Common/Button'
 import banner from '../static/images/banner.jpg'
 
 const BannerStyled = styled.section`
