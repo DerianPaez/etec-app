@@ -10,6 +10,7 @@ const ValuesStyled = styled.section`
   @media (min-width: 768px) {
     .values-container {
       grid-template-columns: 1fr 1fr;
+      gap: 60px;
     }
   }
 

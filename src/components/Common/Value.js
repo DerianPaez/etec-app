@@ -4,7 +4,7 @@ const ValueStyled = styled.div`
   .value-title {
     display: flex;
     gap: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 
     .value-icon {
       width: 25px;
@@ -14,7 +14,7 @@ const ValueStyled = styled.div`
   .value-text {
     border: none;
     border-top: 1px solid gray;
-    padding-top: 5px;
+    padding-top: 10px;
   }
 `
 const Value = ({ icon, title, text }) => {
@@ -24,7 +24,7 @@ const Value = ({ icon, title, text }) => {
         <figure className="value-icon">
           <img src={icon} alt="" />
         </figure>
-        <h4>{title}</h4>
+        <h3>{title}</h3>
       </div>
       <div className="value-text">
         <p>{text}</p>

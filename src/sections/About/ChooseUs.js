@@ -18,7 +18,7 @@ const ChooseUs = () => {
   return (
     <ChooseUsStyled>
       <div className="wrapper">
-        <h1>¿Por qué elegirnos?</h1>
+        <h2>¿Por qué elegirnos?</h2>
         <div className="choose-us-container">
           <ChooseUsElement title="Entrega rapida" text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes. "/>
           <ChooseUsElement title="Entrega rapida" text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes. "/>
