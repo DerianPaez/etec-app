@@ -129,11 +129,14 @@ const Header = () => {
   }
 
   history.listen((location) => {
+    window.scrollTo(0, 0)
     if(location === history.location){
       if(!state)
         setState(false)
+        window.scrollY = 0
     }
   })
+
   return (
     <HeaderStyled isMenuOpen={state}>
         <Logo/>
@@ -151,7 +154,6 @@ const Header = () => {
             <li><Link to="/">Inicio</Link></li>
             <li><Link to="/nosotros">Nosotros</Link></li>
             <li><Link to="/productos">Productos</Link></li>
-            <li><Link to={`${window.location.origin}/#contacto-id`}>Contácto</Link></li>
           </ul>
 
           <div className="social-media-nav">

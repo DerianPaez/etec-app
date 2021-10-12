@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Button from '../components/Common/Button'
+import { useRef } from 'react'
 
 const ContactStyled = styled.section`
   padding-top: 60px;
@@ -32,8 +33,9 @@ const ContactStyled = styled.section`
   }
 `
 const Contact = () => {
+  const contactRef = useRef(null)
   return (
-    <ContactStyled id="contacto-id">
+    <ContactStyled id="contact-id" ref={contactRef}>
       <div className="wrapper">
         <div className="contact-content">
           <h2>Contáctanos</h2>

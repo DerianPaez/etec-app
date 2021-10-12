@@ -4,7 +4,7 @@ import Link from '../../components/Common/Link'
 
 import imageWe from '../../static/images/Rectangles.png'
 
-const WeStyled = styled.section`
+const WeStyled = styled.main`
   display: grid;
   justify-content: center;
   align-items: center;

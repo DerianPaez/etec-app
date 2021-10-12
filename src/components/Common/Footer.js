@@ -14,6 +14,13 @@ const FooterStyled = styled.footer`
     gap: 20px;
     padding: 50px 0;
     text-align: center;
+
+    .footer-content-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     @media (min-width: 630px) {
       grid-template-columns: repeat(4, 1fr);
     }
@@ -70,13 +77,12 @@ const Footer = () => {
     <FooterStyled>
       <div className="wrapper">
         <div className="footer-content">
-          <div>
+          <div className="footer-content-main">
             <Logo/>
             <ul className="menu">
               <li><Link to="/">Inicio</Link></li>
               <li><Link to="/nosotros">Nosotros</Link></li>
               <li><Link to="/productos">Productos</Link></li>
-              <li><Link to="/contacto">Contácto</Link></li>
             </ul>
           </div>
           <div>
@@ -98,7 +104,7 @@ const Footer = () => {
             </figure>
           </div>
           <div className="footer-contact">
-            <h4>Contácto</h4>
+            <h4>Contacto</h4>
             <p>soporte-etec@etec.com</p>
             <p>+593 99 1969 410</p>
             <p>+593 99 1969 410</p>

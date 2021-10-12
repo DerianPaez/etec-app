@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Link from './Link'
 
 const LogoStyled = styled.div`
+  width: min-content;
   user-select: none;
   cursor: pointer;
   p {
@@ -13,11 +14,11 @@ const LogoStyled = styled.div`
 `
 const Logo = () => {
   return (
-    <Link to="/">
-      <LogoStyled>
+    <LogoStyled>
+      <Link to="/">
         <p>ETEC</p>
-      </LogoStyled>
-    </Link>
+      </Link>
+    </LogoStyled>
   )
 }
 

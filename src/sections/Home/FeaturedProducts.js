@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import FeaturedProductList from '../../components/Lists/FeaturedProductList'
 
-const FeaturedProductsStyled = styled.section`
-  /*  */
+const FeaturedProductsStyled = styled.main`
+  padding: 40px 0;
 `
 const FeaturedProducts = () => {
   return (
