@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import ProductModal from '../Modals/ProductModal'
+import useModal from '../../hooks/useModal'
 
 const ProductStyled = styled.div`
   display: grid;
@@ -8,9 +10,6 @@ const ProductStyled = styled.div`
   height: 100%;
   cursor: pointer;
   transition: .3s;
-  &:hover {
-    transform: scale(1.1);
-  }
   .product-image {
     border: 1px solid var(--gray-light-color);
     display: block;
@@ -33,19 +32,33 @@ const ProductStyled = styled.div`
   .discount {
     text-decoration: line-through;
   }
+
+  @media (min-width: 768px) {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 `
 const Product = ({ id, image, name, price, stock, category, brand, discount }) => {
+  const { isOpen, openModal, closeModal } = useModal()
+  const handleClick = () => {
+    openModal()
+  }
   return (
-    <ProductStyled>
-      <figure className="product-image">
-        <img loading="lazy" src={image} alt={name}/>
-      </figure>
-      <div className="product-content">
-        <h4>{name}</h4>
-        {discount && <p className="discount">$ {discount}</p>}
-        <p>$ {price}</p>
-      </div>
-    </ProductStyled>
+    <>
+      <ProductStyled onClick={handleClick}>
+        <figure className="product-image">
+          <img loading="lazy" src={image} alt={name}/>
+        </figure>
+        <div className="product-content">
+          <h4>{name}</h4>
+          {discount && <p className="discount">$ {discount}</p>}
+          <p>$ {price}</p>
+        </div>
+
+      </ProductStyled>
+      <ProductModal product={{ id, image, name, price, stock, category, brand, discount }} isModalOpen={isOpen} closeModal={closeModal}/>
+    </>
   )
 }
 
