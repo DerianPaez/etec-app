@@ -33,11 +33,36 @@ const GalleryProducts = () => {
     <GalleryProductsStyled>
       <div className="wrapper">
         <div className="gallery-products-container">
-          <GalleryElement className="products-1" type="Cocina" name="Cocina electrica" background={cream}/>
-          <GalleryElement className="products-2" type="Cocina" name="Cocina electrica" background={cream}/>
-          <GalleryElement className="products-3" type="Cocina" name="Cocina electrica" background={cream}/>
-          <GalleryElement className="products-4" type="Cocina" name="Cocina electrica" background={cream}/>
-          <GalleryElement className="products-5" type="Cocina" name="Cocina electrica" background={cream}/>
+          <GalleryElement
+            className="products-1"
+            type="Cocina"
+            name="Cocina electrica"
+            background={cream}
+          />
+          <GalleryElement
+            className="products-2"
+            type="Cocina"
+            name="Cocina electrica"
+            background={cream}
+          />
+          <GalleryElement
+            className="products-3"
+            type="Cocina"
+            name="Cocina electrica"
+            background={cream}
+          />
+          <GalleryElement
+            className="products-4"
+            type="Cocina"
+            name="Cocina electrica"
+            background={cream}
+          />
+          <GalleryElement
+            className="products-5"
+            type="Cocina"
+            name="Cocina electrica"
+            background={cream}
+          />
         </div>
       </div>
     </GalleryProductsStyled>

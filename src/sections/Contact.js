@@ -1,18 +1,18 @@
 import styled from 'styled-components'
 import Button from '../components/Common/Button'
 import { useRef } from 'react'
+import { theme } from '../theme'
 
 const ContactStyled = styled.section`
   padding-top: 60px;
   input, textarea {
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid ${theme.colors.primary};
     outline: none;
     width: 100%;
     padding: 10px 5px;
     resize: none;
     outline: none;
-    /* border-radius: 5px; */
   }
 
   .form {

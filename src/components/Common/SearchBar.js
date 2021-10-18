@@ -1,16 +1,14 @@
 import { useState } from 'react'
 import styled from 'styled-components'
+import { theme } from '../../theme'
 
 const SearchBarStyled = styled.div`
   width: 100%;
   border-radius: 10px;
-  border: 1px solid var(--gray-light-color);
+  border: 1px solid ${theme.colors.stroke};
   input {
     width: 100%;
-    border: none;
-    background: none;
-    outline: none;
-    padding: 5px 15px;
+    padding: 5px 20px;
   }
 `
 const SearchBar = ({ className }) => {

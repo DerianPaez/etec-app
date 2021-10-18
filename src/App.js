@@ -1,15 +1,9 @@
-import styled from 'styled-components'
-import './App.css'
 import Routes from './routes/Routes'
+import './App.css'
 
-const AppStyled = styled.div`
-  /*  */
-`
 const App = () => {
   return (
-    <AppStyled>
-      <Routes/>
-    </AppStyled>
+    <Routes/>
   )
 }
 

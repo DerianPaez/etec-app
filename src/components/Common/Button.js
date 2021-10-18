@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import { theme } from '../../theme'
 
 const ButtonStyled = styled.button`
   width: min-content;
-  background-color: var(--main-color);
+  background-color: ${theme.colors.primary};
   outline: none;
   border: none;
   cursor: pointer;

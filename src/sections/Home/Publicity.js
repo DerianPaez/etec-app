@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Button from '../../components/Common/Button'
 import watch from '../../static/images/watch.jpg'
+import { theme } from '../../theme'
 
 const PublicityStyled = styled.section`
   .publicity-container {
@@ -9,7 +10,7 @@ const PublicityStyled = styled.section`
     background-position: 50% 50%;
     background-repeat: no-repeat;
     padding: 60px 20px;
-    color: #ffffff;
+    color: ${theme.colors.textWithBackground};
     p {
       margin-bottom: 5px;
     }

@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import Link from './Link'
-import instagram from '../../static/icons/instagram.svg'
-import whatsapp from '../../static/icons/whatsapp.svg'
-import facebook from '../../static/icons/facebook.svg'
+import Icon from './Icon'
 
 const SocialMediaStyled = styled.div`
   width: 100%;
@@ -33,17 +31,17 @@ const SocialMedia = () => {
     <SocialMediaStyled>
       <figure>
         <Link to="">
-          <img src={facebook} alt="" />
+          <Icon icon="facebook" width="25" height="25" color="white"/>
         </Link>
       </figure>
       <figure>
         <Link to="">
-          <img src={instagram} alt="" />
+          <Icon icon="instagram" width="25" height="25" color="white"/>
         </Link>
       </figure>
       <figure>
         <Link to="">
-          <img src={whatsapp} alt="" />
+          <Icon icon="whatsapp" width="25" height="25" color="white"/>
         </Link>
       </figure>
     </SocialMediaStyled>

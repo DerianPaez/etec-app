@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import whatsapp from '../../static/icons/whatsapp.svg'
+import Icon from './Icon'
 
 const ButtonWhatsAppStyled = styled.button`
   display: grid;
@@ -17,11 +17,10 @@ const ButtonWhatsAppStyled = styled.button`
   font-weight: 500;
   min-width: 250px;
   text-align: left;
-  img {
+  svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
   }
 `
 const ButtonWhatsApp = ({ product }) => {
@@ -38,7 +37,7 @@ const ButtonWhatsApp = ({ product }) => {
   }
   return (
     <ButtonWhatsAppStyled type="button" onClick={handleClick}>
-      <img src={whatsapp} alt="whatsapp icon" /> Reservar por WhatsApp
+      <Icon icon="whatsapp" width="25" height="25" color="white"/> Reservar por WhatsApp
     </ButtonWhatsAppStyled>
   )
 }

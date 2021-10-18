@@ -1,17 +1,18 @@
 import styled from 'styled-components'
 import ProductModal from '../Modals/ProductModal'
 import useModal from '../../hooks/useModal'
+import { theme } from '../../theme'
 
 const ProductStyled = styled.div`
   display: grid;
   grid-template-rows: 300px 1fr;
-  background: var(--box-color);
+  background: ${theme.colors.background};
   overflow: hidden;
   height: 100%;
   cursor: pointer;
   transition: .3s;
   .product-image {
-    border: 1px solid var(--gray-light-color);
+    border: 1px solid ${theme.colors.stroke};
     display: block;
     width: 100%;
     height: 100%;

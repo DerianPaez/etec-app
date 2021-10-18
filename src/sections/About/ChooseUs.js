@@ -20,9 +20,18 @@ const ChooseUs = () => {
       <div className="wrapper">
         <h2>¿Por qué elegirnos?</h2>
         <div className="choose-us-container">
-          <ChooseUsElement title="Entrega rapida" text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes. "/>
-          <ChooseUsElement title="Entrega rapida" text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes. "/>
-          <ChooseUsElement title="Entrega rapida" text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes. "/>
+          <ChooseUsElement
+            title="Entrega rapida"
+            text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes."
+          />
+          <ChooseUsElement
+            title="Entrega rapida"
+            text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes. "
+          />
+          <ChooseUsElement
+            title="Entrega rapida"
+            text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes. "
+          />
         </div>
       </div>
     </ChooseUsStyled>

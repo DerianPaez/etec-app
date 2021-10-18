@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { theme } from '../../theme'
 
 const ValueStyled = styled.div`
   .value-title {
@@ -13,7 +14,7 @@ const ValueStyled = styled.div`
 
   .value-text {
     border: none;
-    border-top: 1px solid gray;
+    border-top: 1px solid ${theme.colors.stroke};
     padding-top: 10px;
   }
 `
@@ -28,7 +29,7 @@ const Value = ({ icon, title, text }) => {
       </div>
       <div className="value-text">
         <p>{text}</p>
-      </div>   
+      </div>
     </ValueStyled>
   )
 }

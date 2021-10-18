@@ -1,39 +1,26 @@
-import styled from 'styled-components'
-import { useHistory } from 'react-router-dom'
-import menu from '../../static/icons/menu.svg'
-import close from '../../static/icons/close.svg'
 import { useState } from 'react'
+import { useHistory } from 'react-router-dom'
+import { theme } from '../../theme'
+import styled from 'styled-components'
 import SocialMedia from './SocialMedia'
 import Logo from './Logo'
 import Link from './Link'
-import instagram from '../../static/icons/instagram.svg'
-import whatsapp from '../../static/icons/whatsapp.svg'
-import facebook from '../../static/icons/facebook.svg'
+import Icon from './Icon'
 
 const HeaderStyled = styled.header`
   display: grid;
-  grid-template-columns: min-content min-content;
+  grid-template-columns: repeat(2, min-content);
   justify-content: space-between;
   align-items: center;
   padding: 10px 5%;
-  background-color: var(--main-color);
+  background-color: ${theme.colors.primary};
   color: #fff;
   width: 100%;
   position: fixed;
   z-index: 1000;
 
-  .menu-open {
-    display: grid;
-    align-items: center;
-    width: 100%;
-    font-size: 20px;
-    img {
-      width: 28px;
-    }
-  }
-
   .menu-nav {
-    background-color: var(--main-color);
+    background-color: ${theme.colors.primary};
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -52,13 +39,12 @@ const HeaderStyled = styled.header`
     position: absolute;
     top: 10px;
     right: 5%;
-    img {
-      width: 28px;
-    }
+    width: min-content;
+    height: min-content;
   }
 
   .menu {
-    color: var(--secundary-color);
+    color: ${theme.colors.textWithBackground};
     display: grid;
     gap: 20px;
     justify-content: center;
@@ -141,14 +127,14 @@ const Header = () => {
     <HeaderStyled isMenuOpen={state}>
         <Logo/>
 
-        <figure onClick={handleMenuOpen} className="menu-open">
-          <img src={menu} alt="Menu Icon" />
-        </figure>
+        <button onClick={handleMenuOpen} className="menu-open">
+          <Icon icon="menu" width="25" height="25" color="white"/>
+        </button>
 
         <nav className="menu-nav">
-          <figure onClick={handleMenuClose} className="menu-close">
-            <img src={close} alt="Menu Icon Close" />
-          </figure>
+          <button onClick={handleMenuClose} className="menu-close">
+            <Icon icon="menuClose" width="25" height="25" color="white"/>
+          </button>
 
           <ul className="menu">
             <li><Link to="/">Inicio</Link></li>
@@ -159,17 +145,17 @@ const Header = () => {
           <div className="social-media-nav">
             <figure>
               <Link to="">
-                <img src={facebook} alt="" />
+                <Icon icon="facebook" width="20" height="20" color="white"/>
               </Link>
             </figure>
             <figure>
               <Link to="">
-                <img src={instagram} alt="" />
+                <Icon icon="instagram" width="20" height="20" color="white"/>
               </Link>
             </figure>
             <figure>
               <Link to="">
-                <img src={whatsapp} alt="" />
+                <Icon icon="whatsapp" width="20" height="20" color="white"/>
               </Link>
             </figure>
           </div>

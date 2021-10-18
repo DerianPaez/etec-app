@@ -1,5 +1,6 @@
 /* eslint-disable no-template-curly-in-string */
 import styled from 'styled-components'
+import { theme } from '../../theme'
 
 const PromoStyled = styled.div`
   height: 130px;
@@ -13,7 +14,7 @@ const PromoStyled = styled.div`
   align-items: flex-start;
   padding: 10px;
   border-radius: 2px;
-  color: #ffffff;
+  color: ${theme.colors.textWithBackground};
   @media (min-width: 768px) {
     height: 160px;
   }

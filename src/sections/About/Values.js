@@ -26,12 +26,30 @@ const Values = () => {
       <div className="wrapper">
         <h2>Valores</h2>
         <div className="values-container">
-          <Value title="Responsabilidad" text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes."/>
-          <Value title="Responsabilidad" text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes."/>
-          <Value title="Responsabilidad" text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes."/>
-          <Value title="Responsabilidad" text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes."/>
-          <Value title="Responsabilidad" text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes."/>
-          <Value title="Responsabilidad" text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes."/>
+          <Value
+            title="Responsabilidad"
+            text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes."
+          />
+          <Value
+            title="Responsabilidad"
+            text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes."
+          />
+          <Value
+            title="Responsabilidad"
+            text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes."
+          />
+          <Value
+            title="Responsabilidad"
+            text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes."
+          />
+          <Value
+            title="Responsabilidad"
+            text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes."
+          />
+          <Value
+            title="Responsabilidad"
+            text="Somos una empresa de servicios estratégicos comerciales dedicada a optimizar la calidad de vida de nuestros clientes."
+          />
         </div>
       </div>
     </ValuesStyled>

@@ -2,6 +2,8 @@ import React, { useRef } from 'react'
 import styled from 'styled-components'
 import ReactDOM from 'react-dom'
 import ButtonWhatsApp from '../Common/ButtonWhatsApp'
+import { theme } from '../../theme'
+import Icon from '../Common/Icon'
 
 const ProductModalStyled = styled.div`
   position: fixed;
@@ -14,7 +16,7 @@ const ProductModalStyled = styled.div`
   align-items: center;
   z-index: 1001;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: ${theme.colors.modalBackground};
   transition: 0.3s;
   .modal-container {
     position: relative;
@@ -22,12 +24,11 @@ const ProductModalStyled = styled.div`
     justify-content: center;
     align-items: center;
     grid-gap: 20px;
-    background-color: #ffffff;
+    background-color: ${theme.colors.background};
     border-radius: 10px;
     padding: 25px;
     cursor: default;
     overflow-y: scroll;
-    /*  */
     width: 90%;
     height: 80%;
     max-width: 800px;
@@ -38,7 +39,7 @@ const ProductModalStyled = styled.div`
       right: 15px;
     }
     .modal-product-image {
-        border: 1px solid var(--gray-light-color);
+        border: 1px solid ${theme.colors.stroke};
         width: 100%;
         height: 100%;
         img {
@@ -100,13 +101,6 @@ const ProductModalStyled = styled.div`
   }
 `
 
-const modalIconClose = (
-  <svg width="25" height="25" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M2 2L26.8751 27M2.1249 27L27 2" stroke="black" strokeWidth="4" strokeLinecap="round"/>
-  </svg>
-
-)
-
 const ModalContainer = document.getElementById('modal')
 
 const ProductModal = ({ product, isModalOpen, closeModal }) => {
@@ -120,9 +114,9 @@ const ProductModal = ({ product, isModalOpen, closeModal }) => {
     return ReactDOM.createPortal(
       <ProductModalStyled ref={modalbackground} onClick={handleModal}>
         <div className="modal-container">
-          <figure onClick={() => closeModal()} className="modal-icon-close">
-            {modalIconClose}
-          </figure>
+          <button onClick={() => closeModal()} className="modal-icon-close">
+            <Icon icon="menuClose" width="25" height="25" color="black" />
+          </button>
           <figure className="modal-product-image">
             <img src={product && product.image} alt="Imagen" />
           </figure>
