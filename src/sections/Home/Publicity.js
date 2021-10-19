@@ -10,9 +10,12 @@ const PublicityStyled = styled.section`
     background-position: 50% 50%;
     background-repeat: no-repeat;
     padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     color: ${theme.colors.textWithBackground};
-    p {
-      margin-bottom: 5px;
+    h2 {
+      margin-bottom: 0;
     }
   }
 `

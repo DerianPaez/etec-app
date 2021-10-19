@@ -9,12 +9,12 @@ const ProductStyled = styled.div`
   display: grid;
   grid-template-rows: 300px 1fr;
   background: ${theme.colors.background};
+  box-shadow: 0px 0px 7px 1px ${theme.colors.stroke};
   overflow: hidden;
   height: 100%;
   cursor: pointer;
   transition: .3s;
   .product-image {
-    border: 1px solid ${theme.colors.stroke};
     display: block;
     width: 100%;
     height: 100%;

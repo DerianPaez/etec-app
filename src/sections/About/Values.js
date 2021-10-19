@@ -4,20 +4,8 @@ import Value from '../../components/Common/Value'
 const ValuesStyled = styled.section`
   .values-container {
     display: grid;
-    gap: 30px;
-  }
-
-  @media (min-width: 768px) {
-    .values-container {
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .values-container {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px;
   }
 `
 const Values = () => {

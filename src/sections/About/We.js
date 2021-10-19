@@ -17,7 +17,7 @@ const WeStyled = styled.main`
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    grid-gap: 20px;
+    grid-gap: 50px;
     .we-content {
       display: grid;
       grid-area: content;

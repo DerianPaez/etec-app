@@ -15,6 +15,10 @@ const FooterStyled = styled.footer`
     padding: 50px 0;
     text-align: center;
 
+    h4 {
+      margin-bottom: 10px;
+    }
+
     .footer-content-main {
       display: flex;
       flex-direction: column;
@@ -24,16 +28,16 @@ const FooterStyled = styled.footer`
     @media (min-width: 630px) {
       grid-template-columns: repeat(4, 1fr);
     }
-  }
-
-  .social-media {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-    figure {
-      width: 26px;
-      height: 25px;
+    
+    .social-media {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 5px;
+      figure {
+        width: 26px;
+        height: 25px;
+      }
     }
   }
 
