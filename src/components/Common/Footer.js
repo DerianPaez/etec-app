@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-// import SocialMedia from './SocialMedia'
 import Logo from './Logo'
-import Icon from './Icon'
 import { theme } from '../../theme'
 
 const FooterStyled = styled.footer`
@@ -71,17 +69,9 @@ const Footer = () => {
           </div>
           <div className="social-media">
             <h4>Redes sociales</h4>
-            <figure>
-              <Link to="">
-                <Icon icon="facebook" width="20" height="20" color="white" />
-              </Link>
-            </figure>
-            <figure>
-              <Icon icon="instagram" width="20" height="20" color="white" />
-            </figure>
-            <figure>
-              <Icon icon="whatsapp" width="20" height="20" color="white" />
-            </figure>
+            <Link to="">Facebook</Link>
+            <Link to="">Instragram</Link>
+            <Link to="">WhatsApp</Link>
           </div>
           <div className="footer-contact">
             <h4>Contacto</h4>

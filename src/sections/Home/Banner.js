@@ -1,15 +1,17 @@
 import styled from 'styled-components'
 import Button from '../../components/Common/Button'
 import banner from '../../static/images/banner.jpg'
+import { theme } from '../../theme'
 
 const BannerStyled = styled.section`
-  background-image: url(${banner});
+  /* background-image: url(${banner}); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   height: 80vh;
   display: grid;
   align-items: center;
+  border-bottom: 2px solid ${theme.colors.stroke};
   .banner-content {
     p {
       margin-bottom: 10px;
@@ -20,7 +22,6 @@ const BannerStyled = styled.section`
       }
     }
   }
-
 `
 const Banner = () => {
   return (

@@ -5,7 +5,8 @@ export const products = [{
   "stock": false,
   "category": "electrodomesticos",
   "brand": "Smart Sense Nicotine",
-  "image": "http://dummyimage.com/531x509.png/dddddd/000000"
+  "image": "http://dummyimage.com/531x509.png/dddddd/000000",
+  "discount": 200.00,
 }, {
   "id": "baf7db39-3368-401e-a442-fb144f822ab0",
   "name": "Rolled Oats",

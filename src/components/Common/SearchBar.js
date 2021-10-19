@@ -4,11 +4,11 @@ import { theme } from '../../theme'
 
 const SearchBarStyled = styled.div`
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid ${theme.colors.stroke};
   input {
     width: 100%;
-    padding: 5px 20px;
+    padding: 8px 20px;
   }
 `
 const SearchBar = ({ className }) => {

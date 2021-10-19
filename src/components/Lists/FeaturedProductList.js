@@ -12,11 +12,11 @@ const FeaturedProductListStyled = styled.div`
 const FeaturedProductList = () => {
   return (
     <FeaturedProductListStyled>
-      <Product image={champu} name="Pulidora de uñas Mercedes" price="29,99" discount="30,00"/>
-      <Product image={champu} name="Bandas de resistencia" price="22,99" discount="28,00"/>
-      <Product image={champu} name="Dopler fetal" price="37,99"/>
-      <Product image={champu} name="Kit de sutura" price="24,99"/>
-      <Product image={champu} name="Masajeadores corporales" price="34,99"/>
+      <Product name="Pulidora de uñas Mercedes" price="29,99" discount="30,00"/>
+      <Product name="Bandas de resistencia" price="22,99" discount="28,00"/>
+      <Product name="Dopler fetal" price="37,99"/>
+      <Product name="Kit de sutura" price="24,99"/>
+      <Product name="Masajeadores corporales" price="34,99"/>
     </FeaturedProductListStyled>
   )
 }

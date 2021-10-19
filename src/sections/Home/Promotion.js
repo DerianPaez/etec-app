@@ -27,12 +27,12 @@ const Promotion = () => {
       <div className="wrapper">
         <div className="promo-content">
           <Promo
-            background={discount}
+            // background={discount}
             title="Nuevos productos"
             text="35% de descuento en dishes"
           />
           <Promo
-            background={discount2}
+            // background={discount2}
             title="Nueva colección"
             text="Obten hasta un 50% de descuento"
           />

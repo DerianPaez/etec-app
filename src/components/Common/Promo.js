@@ -15,6 +15,7 @@ const PromoStyled = styled.div`
   padding: 10px;
   border-radius: 2px;
   color: ${theme.colors.textWithBackground};
+  border: 2px solid ${theme.colors.stroke};
   @media (min-width: 768px) {
     height: 160px;
   }

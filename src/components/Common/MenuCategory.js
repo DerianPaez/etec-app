@@ -6,17 +6,6 @@ import Icon from './Icon'
 
 const MenuCategoryStyled = styled.div`
   width: min-content;
-  .menu-category-open {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: min-content;
-    cursor: pointer;
-    img {
-      width: 22px;
-      height: 22px;
-    }
-  }
   .menu-category {
     display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
     background: ${theme.colors.primary};
@@ -25,7 +14,7 @@ const MenuCategoryStyled = styled.div`
     top: 52px;
     left: 0;
     bottom: 0;
-    padding: 15px;
+    padding: 15px 15px 15px 5%;
     color: ${theme.colors.textWithBackground};
     .menu-category-header {
       display: grid;
@@ -51,7 +40,7 @@ const MenuCategoryStyled = styled.div`
     }
     ul {
       display: grid;
-      grid-gap: 5px;
+      grid-gap: 10px;
     }
   }
 
@@ -68,6 +57,9 @@ const MenuCategoryStyled = styled.div`
       background: ${theme.colors.primary};
       color: ${theme.colors.textWithBackground};
     }
+    .menu-category-close {
+      display: none;
+    }
   }
 `
 const MenuCategory = ({ className }) => {
@@ -80,15 +72,15 @@ const MenuCategory = ({ className }) => {
   }
   return (
     <MenuCategoryStyled isOpen={isOpen} className={className}>
-      <figure onClick={handleMenuOpen} className="menu-category-open">
-        <Icon icon="menuPoint" width="25" height="25" color="white"/>
-      </figure>
+      <button onClick={handleMenuOpen} className="menu-category-open">
+        <Icon icon="menuPoint" width="25" height="25" color="black"/>
+      </button>
       <div className="menu-category">
         <div className="menu-category-header">
           <p className="menu-category-title">Categorias</p>
-          <figure onClick={handleMenuClose} className="menu-category-close">
+          <button onClick={handleMenuClose} className="menu-category-close">
             <Icon icon="menuClose" width="25" height="25" color="white"/>
-          </figure>
+          </button>
         </div>
         <hr />
         <ul>

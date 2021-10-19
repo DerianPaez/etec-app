@@ -38,7 +38,6 @@ const MainStyled = styled.main`
   }
 `
 const Main = () => {
-  
   return (
     <MainStyled>
       <div className="wrapper">

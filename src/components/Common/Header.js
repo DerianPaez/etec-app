@@ -140,6 +140,7 @@ const Header = () => {
             <li><Link to="/">Inicio</Link></li>
             <li><Link to="/nosotros">Nosotros</Link></li>
             <li><Link to="/productos">Productos</Link></li>
+            <li><Link to="/">Contacto</Link></li>
           </ul>
 
           <div className="social-media-nav">

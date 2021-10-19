@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import ProductModal from '../Modals/ProductModal'
 import useModal from '../../hooks/useModal'
 import { theme } from '../../theme'
+import { useState } from 'react'
+import imageError from '../../assets/images/imageError.jpg'
 
 const ProductStyled = styled.div`
   display: grid;
@@ -24,14 +26,24 @@ const ProductStyled = styled.div`
   }
 
   .product-content {
+    display: grid;
+    grid-gap: 5px;
     padding: 10px;
     h4 {
-      font-size: 14px;
+      font-size: .95em;
+      font-weight: 600;
       line-height: 1.4rem;
     }
-  }
-  .discount {
-    text-decoration: line-through;
+    .price {
+      font-size: 1.2em;
+      font-weight: 800;
+    }
+    .discount {
+      text-decoration: line-through;
+      font-size: 1em;
+      font-weight: normal;
+      color: #BCBCBC;
+    }
   }
 
   @media (min-width: 768px) {
@@ -41,20 +53,26 @@ const ProductStyled = styled.div`
   }
 `
 const Product = ({ id, image, name, price, stock, category, brand, discount }) => {
+  const [img, setImg] = useState(image)
   const { isOpen, openModal, closeModal } = useModal()
   const handleClick = () => {
     openModal()
+  }
+  const handleImageError = () => {
+    setImg(imageError)
   }
   return (
     <>
       <ProductStyled onClick={handleClick}>
         <figure className="product-image">
-          <img loading="lazy" src={image} alt={name}/>
+          <img onError={handleImageError} loading="lazy" src={img} alt={name}/>
         </figure>
         <div className="product-content">
           <h4>{name}</h4>
-          {discount && <p className="discount">$ {discount}</p>}
-          <p>$ {price}</p>
+          <div className="product-values">
+            {discount && <p className="discount">{`$ ${discount}`}</p>}
+            <p className="price">{`$ ${price}`}</p>
+          </div>
         </div>
 
       </ProductStyled>

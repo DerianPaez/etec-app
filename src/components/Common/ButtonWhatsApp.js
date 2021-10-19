@@ -5,6 +5,8 @@ import Icon from './Icon'
 const ButtonWhatsAppStyled = styled.button`
   display: grid;
   grid-template-columns: min-content 1fr;
+  align-items: center;
+  line-height: 25px;
   grid-gap: 10px;
   width: min-content;
   background-color: #25D366;
