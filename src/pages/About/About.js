@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import We from '../../sections/About/We'
 import Values from '../../sections/About/Values'

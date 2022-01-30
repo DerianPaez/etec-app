@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import Promo from '../../components/Common/Promo'
 import discount from '../../static/images/discount.jpg'

@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import Product from '../Common/Product'
 import champu from '../../static/images/champu.jpg'

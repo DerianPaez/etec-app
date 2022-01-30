@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import Banner from '../../sections/Home/Banner'
 import Promotion from '../../sections/Home/Promotion'

@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import { theme } from '../../theme'
 import styled from 'styled-components'
@@ -59,6 +60,7 @@ const MenuCategoryStyled = styled.div`
     }
     .menu-category-close {
       display: none;
+      visibility: hidden;
     }
   }
 `

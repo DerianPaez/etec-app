@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import Button from '../../components/Common/Button'
 import banner from '../../static/images/banner.jpg'

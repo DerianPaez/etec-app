@@ -1,3 +1,4 @@
+import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Home, About, Products } from '../pages'
 import Layout from '../components/Common/Layout'

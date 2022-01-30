@@ -1,8 +1,9 @@
+import React from 'react'
 import styled from 'styled-components'
 import ProductModal from '../Modals/ProductModal'
 import useModal from '../../hooks/useModal'
 import { theme } from '../../theme'
-import { useState } from 'react'
+import { useState, Fragment } from 'react'
 import imageError from '../../assets/images/imageError.jpg'
 
 const ProductStyled = styled.div`
@@ -62,7 +63,7 @@ const Product = ({ id, image, name, price, stock, category, brand, discount }) =
     setImg(imageError)
   }
   return (
-    <>
+    <Fragment>
       <ProductStyled onClick={handleClick}>
         <figure className="product-image">
           <img onError={handleImageError} loading="lazy" src={img} alt={name}/>
@@ -77,7 +78,7 @@ const Product = ({ id, image, name, price, stock, category, brand, discount }) =
 
       </ProductStyled>
       <ProductModal product={{ id, image, name, price, stock, category, brand, discount }} isModalOpen={isOpen} closeModal={closeModal}/>
-    </>
+    </Fragment>
   )
 }
 

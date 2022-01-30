@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import { products } from '../../data/Product.data'
 import Product from '../Common/Product'

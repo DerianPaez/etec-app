@@ -1,4 +1,5 @@
 /* eslint-disable no-template-curly-in-string */
+import React from 'react'
 import styled from 'styled-components'
 import { theme } from '../../theme'
 

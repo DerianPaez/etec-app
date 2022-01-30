@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import FeaturedProductList from '../../components/Lists/FeaturedProductList'
 
