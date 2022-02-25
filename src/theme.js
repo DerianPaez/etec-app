@@ -4,6 +4,7 @@ export const theme = {
     accent: '#F60020',
     overlay: '#00000075',
     stroke: '#BABABA',
-    modalBackground: 'rgba(0, 0, 0, 0.3)',
+    primaryRed: '#F60020',
+    modalBackground: 'rgba(0, 0, 0, 0.3)'
   }
 }
