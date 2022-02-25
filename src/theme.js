@@ -1,11 +1,8 @@
 export const theme = {
   colors: {
-    primary: '#000000',
-    accent: '#FFE6E6',
-    secundaryDark: '#FF2626',
-    secundaryLight: '#BD1616',
-    background: '#FFF',
-    textWithBackground: '#FFF',
+    primary: '#323E4D',
+    accent: '#F60020',
+    overlay: '#00000075',
     stroke: '#BABABA',
     primaryRed: '#F60020',
     modalBackground: 'rgba(0, 0, 0, 0.3)'
