@@ -4,11 +4,11 @@ import { theme } from '../../theme'
 
 const ButtonStyled = styled.button`
   width: min-content;
-  background-color: ${theme.colors.primaryRed};
+  background-color: ${theme.colors.accent};
   outline: none;
   border: none;
   cursor: pointer;
-  color: #ffffff;
+  color: ${theme.colors.secundary};
   padding: 8px 20px;
   border-radius: 30px;
   font-weight: 500;
