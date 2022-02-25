@@ -7,6 +7,7 @@ export const theme = {
     background: '#FFF',
     textWithBackground: '#FFF',
     stroke: '#BABABA',
+    primaryRed: '#F60020',
     modalBackground: 'rgba(0, 0, 0, 0.3)'
   }
 }
