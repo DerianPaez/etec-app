@@ -5,11 +5,11 @@ import Link from '../../components/Common/Link'
 
 import imageWe from '../../static/images/Rectangles.png'
 
-const WeStyled = styled.main`
+const WeStyled = styled.section`
   display: grid;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 0;
   .we-container {
     display: grid;
     grid-template-areas:

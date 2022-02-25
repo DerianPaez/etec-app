@@ -4,9 +4,8 @@ import MenuCategory from '../../components/Common/MenuCategory'
 import SearchBar from '../../components/Common/SearchBar'
 import ProductList from '../../components/Lists/ProductList'
 
-const MainStyled = styled.main`
+const MainStyled = styled.div`
   position: relative;
-  padding: 20px 0;
   min-height: calc(100vh - 52px);
   .main-container {
     display: grid;

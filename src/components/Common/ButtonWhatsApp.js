@@ -33,7 +33,7 @@ const ButtonWhatsApp = ({ product }) => {
   Categoría: ${product && product.category}
   Imagen: ${product && product.image}
   Código: ${product && product.id}`
-  const url = `https://wa.me/5930962852852?text=${encodeURI(message)}`
+  const url = `https://wa.me/593978982122?text=${encodeURI(message)}`
   const handleClick = () => {
     window.open(url, '_blank');
   }
