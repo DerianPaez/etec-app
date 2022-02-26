@@ -8,12 +8,11 @@ const SocialMediaStyled = styled.div`
   display: none;
   justify-content: flex-end;
   align-self: center;
-  gap: 5px;
+  gap: 10px;
   figure {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20px;
     a {
       width: 100%;
       display: flex;
@@ -22,7 +21,7 @@ const SocialMediaStyled = styled.div`
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: flex;
   }
 `
@@ -31,18 +30,18 @@ const SocialMedia = () => {
   return (
     <SocialMediaStyled>
       <figure>
-        <Link to="">
-          <Icon icon="facebook" width="25" height="25" color="white"/>
+        <Link to="https://www.facebook.com/Encuentralotodoecuador" target="_blank">
+          <Icon icon="facebook" width="30" height="30" color="white"/>
         </Link>
       </figure>
       <figure>
-        <Link to="">
-          <Icon icon="instagram" width="25" height="25" color="white"/>
+        <Link to="https://www.instagram.com/encuentralotodoecuador/" target="_blank">
+          <Icon icon="instagram" width="30" height="30" color="white"/>
         </Link>
       </figure>
       <figure>
-        <Link to="">
-          <Icon icon="whatsapp" width="25" height="25" color="white"/>
+        <Link to="https://wa.me/593978982122" target="_blank">
+          <Icon icon="whatsapp" width="30" height="30" color="white"/>
         </Link>
       </figure>
     </SocialMediaStyled>

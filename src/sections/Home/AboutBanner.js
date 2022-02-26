@@ -5,7 +5,7 @@ import Button from '../../components/Common/Button'
 import aboutBanner from '../../assets/images/aboutBanner.png'
 import { theme } from '../../theme'
 
-const AboutBannerStyled = styled.section`
+const AboutBannerStyled = styled.div`
   .banner-content {
     display: grid;
     gap: 10px;

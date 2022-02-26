@@ -6,7 +6,7 @@ const Link = ({ children, to = '', url, ...props }) => {
 
   if (to.startsWith('http') || to.startsWith('//')) {
     return (
-      <a href={to} rel="noopener noreferrer">
+      <a href={to} rel="noopener noreferrer" {...props}>
         {children}
       </a>
     )

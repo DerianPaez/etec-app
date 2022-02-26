@@ -5,11 +5,11 @@ import Link from '../../components/Common/Link'
 import imageWe from '../../assets/images/imageWe.png'
 import { theme } from '../../theme'
 
-const WeStyled = styled.main`
+const WeStyled = styled.section`
   display: grid;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  padding-top: 0;
   .we-container {
     display: grid;
     grid-template-areas:

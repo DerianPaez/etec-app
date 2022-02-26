@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import Main from '../../sections/Products/Main'
 
 const ProductsStyled = styled.div`
-  padding-top: 52px;
 `
+
 const Products = () => {
   return (
     <ProductsStyled>
