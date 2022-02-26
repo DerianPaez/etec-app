@@ -50,6 +50,7 @@ const HeaderStyled = styled.header`
     align-items: center;
     grid-template-rows: 1fr;
     transition: .3s;
+    transition-property: top;
     z-index: ${theme.position.menuMobile};
   }
 
@@ -72,13 +73,22 @@ const HeaderStyled = styled.header`
     a {
       font-weight: 600;
       text-transform: uppercase;
+      transition: .3s;
+      transition-property: text-shadow;
+      :hover {
+        text-shadow: 0px 0px 3px #fff;
+      }
     }
+  }
+
+  .link__active {
+    transform: scale(1.5);
   }
 
   .social-media-nav {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-self: center;
     margin-bottom: 10px;
     gap: 5px;
@@ -94,10 +104,6 @@ const HeaderStyled = styled.header`
         align-items: center;
       }
     }
-  }
-
-  .link__active {
-    border-bottom: 2px solid ${theme.colors.secundary};
   }
 
   @media (min-width: 425px) {
@@ -116,7 +122,11 @@ const HeaderStyled = styled.header`
 
   @media (min-width: 1024px) {
     grid-template-columns: 1fr max-content max-content;
-    gap: 100px;
+    gap: 70px;
+
+    .social-media-nav {
+      justify-content: flex-end;
+    }
 
     .menu-open, .menu-close {
       display: none;
@@ -144,6 +154,7 @@ const HeaderStyled = styled.header`
   }
 
   @media (min-width: 1240px) {
+    gap: 100px;
     .menu {
       gap: 40px;
     }
@@ -158,15 +169,6 @@ const Header = () => {
   const handleMenuClose = () => {
     setState(false)
   }
-
-  // history.listen((location) => {
-  //   window.scrollTo(0, 0)
-  //   if(location === history.location){
-  //     if(!state)
-  //       setState(false)
-  //       window.scrollY = 0
-  //   }
-  // })
 
   return (
     <HeaderStyled isMenuOpen={state}>
@@ -186,7 +188,7 @@ const Header = () => {
         <ul className="menu">
           {menu.map((i) => {
             return (
-              <li key={i.id}><NavLink to={i.path} className={({ isActive }) => isActive ? "link__active" : ""}>{i.title}</NavLink></li>
+              <li key={i.id}><NavLink to={i.path} onClick={handleMenuClose} className={({ isActive }) => isActive ? "link__active" : ""}>{i.title}</NavLink></li>
             )
           })}
         </ul>
