@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { theme } from '../../theme'
-import Button from './Button'
 import { useNavigate } from 'react-router-dom'
 
 const GalleryElementStyled = styled.div`
