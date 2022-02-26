@@ -3,25 +3,24 @@ import styled from 'styled-components'
 import { theme } from '../../theme'
 
 const ValueStyled = styled.div`
-  box-shadow: 0px 0px 7px 1px ${theme.colors.stroke};
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 50px;
-  text-align: center;
-  transition: all .2s ease;
-  cursor: pointer;
-  &:hover {
-    background-color: #000;
-    color: #fff;
-  }
+  border-top: 10px solid ${theme.colors.accent};
+  box-shadow: 0px 2px 15px 0px #BFBABA;
+  padding: 30px;
   .value-icon {
-    width: 50px;
-    height: 50px;
-    background-color: #000;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 50px max-content;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      width: 50px;
+      height: 50px;
+      border: 2px solid ${theme.colors.accent};
+      border-radius: 50%;
+    }
   }
 `
 const Value = ({ icon, title, text }) => {
@@ -29,8 +28,8 @@ const Value = ({ icon, title, text }) => {
     <ValueStyled>
       <figure className="value-icon">
         <img src={icon} alt="" />
+        <h3>{title}</h3>
       </figure>
-      <h3>{title}</h3>
       <div className="value-text">
         <p>{text}</p>
       </div>

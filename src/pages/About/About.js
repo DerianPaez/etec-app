@@ -2,9 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import We from '../../sections/About/We'
 import Values from '../../sections/About/Values'
-import ChooseUs from '../../sections/About/ChooseUs'
-import Contact from '../../sections/Contact'
-import AboutBanner from '../../sections/Home/AboutBanner'
+import AboutBanner from '../../sections/About/AboutBanner'
+import AboutPublicity from '../../sections/About/AboutPublicity'
+import AboutSocialMedia from '../../sections/About/AboutSocialMedia'
+import Testimonials from '../../sections/About/Testimonials'
 
 const AboutStyled = styled.div`
   /*  */
@@ -14,9 +15,10 @@ const About = () => {
     <AboutStyled>
       <AboutBanner/>
       <We/>
+      <AboutPublicity/>
       <Values/>
-      <ChooseUs/>
-      <Contact/>
+      <AboutSocialMedia/>
+      <Testimonials/>
     </AboutStyled>
   )
 }

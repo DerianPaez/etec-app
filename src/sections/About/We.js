@@ -9,7 +9,7 @@ const WeStyled = styled.section`
   display: grid;
   justify-content: center;
   align-items: center;
-  padding-top: 0;
+  padding-top: 100px;
   .we-container {
     display: grid;
     grid-template-areas:
