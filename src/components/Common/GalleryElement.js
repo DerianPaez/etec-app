@@ -20,6 +20,7 @@ const GalleryElementStyled = styled.div`
     font-size: 1em;
     font-weight: 1000;
     margin-bottom: 4px;
+    color: ${theme.colors.secundary}
   }
 
   p {
