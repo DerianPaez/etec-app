@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Logo from './Logo'
 import Link from './Link'
 import { theme } from '../../theme'
+import { menu } from '../../data/menu.data'
 
 const FooterStyled = styled.footer`
   .footer-content {
@@ -102,15 +103,16 @@ const Footer = () => {
       <div className="wrapper">
         <div className="footer-content">
           <Logo/>
-          
+
         </div>
       </div>
       <div className="footer-links">
         <ul className="menu">
-          <li><Link to="/">Inicio</Link></li>
-          <li><Link to="/nosotros">Nosotros</Link></li>
-          <li><Link to="/productos">Productos</Link></li>
-          <li><Link to="/contacto">Contacto</Link></li>
+          {menu.map(i => {
+            return (
+              <li key={i.id}><Link to={i.path}>{i.title}</Link></li>
+            )
+          })}
         </ul>
         <p className="rights">© 2022 ETEC <br /> Todos los derechos reservados</p>
         <div className="legal">
