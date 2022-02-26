@@ -47,6 +47,7 @@ const WeStyled = styled.section`
       img {
         width: 100%;
         padding-right: 20px;
+        display: block;
       }
       @media (min-width: 1024px) {
         .we-background {
