@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { theme } from '../../theme'
 
 const PublicityStyled = styled.div`
   background: linear-gradient(to right, #00000075 , #00000075), ${({ backgroundUrl }) => backgroundUrl && `url(${backgroundUrl})`};
