@@ -16,7 +16,7 @@ const PromotionStyled = styled.section`
     background-color: ${theme.colors.background};
     padding: 15px;
     gap: 15px;
-    box-shadow: 0px 3px 20px 2px #00000066;
+    box-shadow: 0px -11px 24px 0px #0000004D;
     @media (min-width: 768px) {
       padding: 20px;
       gap: 20px;

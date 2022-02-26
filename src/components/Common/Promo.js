@@ -18,10 +18,28 @@ const PromoStyled = styled.div`
   border-radius: 2px;
   color: ${theme.colors.primary};
   border: 1px solid ${theme.colors.accent};
+
+  h3 {
+    margin-bottom: 3px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  a {
+    border-bottom: 1px solid ${theme.colors.primary};
+    :hover {
+      color: ${theme.colors.accent};
+      border-color: ${theme.colors.accent};
+    }
+  }
+
   @media (min-width: 768px) {
     padding: 20px;
     height: 200px;
   }
+
   @media (min-width: 1024px) {
     height: 220px;
   }
