@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Banner from '../../sections/Home/Banner'
+import HomeBanner from '../../sections/Home/HomeBanner'
 import Promotion from '../../sections/Home/Promotion'
 import FeaturedProducts from '../../sections/Home/FeaturedProducts'
 import Publicity from '../../sections/Home/Publicity'
@@ -14,7 +14,7 @@ const HomeStyled = styled.div`
 const Home = () => {
   return (
     <HomeStyled>
-      <Banner/>
+      <HomeBanner/>
       <Promotion/>
       <FeaturedProducts/>
       <Publicity/>

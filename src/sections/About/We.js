@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import Button from '../../components/Common/Button'
 import Link from '../../components/Common/Link'
-
-import imageWe from '../../static/images/Rectangles.png'
+import imageWe from '../../assets/images/imageWe.png'
+import { theme } from '../../theme'
 
 const WeStyled = styled.main`
   display: grid;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
+  padding: 50px 0;
   .we-container {
     display: grid;
     grid-template-areas:
@@ -29,11 +29,31 @@ const WeStyled = styled.main`
         width: min-content;
       }
     }
+
     .we-image {
-      grid-area: image;
       width: 100%;
+      position: relative;
+      .we-background {
+        background-color: ${theme.colors.accent};
+        width: 90%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: -20px;
+        right: 0;
+        z-index: -1;
+      }
       img {
         width: 100%;
+        padding-right: 20px;
+      }
+      @media (min-width: 1024px) {
+        .we-background {
+          top: -40px;
+        }
+        img{
+          padding-right: 40px;
+        }
       }
     }
   }
@@ -65,6 +85,7 @@ const We = () => {
           </div>
           <figure className="we-image">
             <img src={imageWe} alt="Etec imagen nosotros" />
+            <div className="we-background"></div>
           </figure>
         </div>
       </div>

@@ -9,7 +9,7 @@ const ButtonStyled = styled.button`
   border: none;
   cursor: pointer;
   color: ${theme.colors.secundary};
-  padding: 8px 20px;
+  padding: 8px 30px;
   border-radius: 30px;
   font-weight: 500;
   transition: all .3s ease;
@@ -18,14 +18,14 @@ const ButtonStyled = styled.button`
     background-color: #000;
   }
 `
-const Button = ({ children, type, action }) => {
+const Button = ({ children, type, action, className }) => {
   const handleClick = () => {
     if (action) {
       action()
     }
   }
   return (
-    <ButtonStyled type={type} onClick={handleClick}>
+    <ButtonStyled className={className} type={type} onClick={handleClick}>
       {children}
     </ButtonStyled>
   )
