@@ -62,4 +62,9 @@ h4 {
   * {
     font-size: 18px;
   }
+
+  h2 {
+    font-size: 1.9em;
+    font-weight: 1000;
+  }
 }

@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Promo from '../../components/Common/Promo'
 import { promo } from '../../data/promo.data'
-import discount from '../../static/images/discount.jpg'
-import discount2 from '../../static/images/discount2.jpg'
 import { theme } from '../../theme'
 
 const PromotionStyled = styled.section`

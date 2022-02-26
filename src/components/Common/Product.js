@@ -8,21 +8,23 @@ import imageError from '../../assets/images/imageError.jpg'
 
 const ProductStyled = styled.div`
   display: grid;
-  grid-template-rows: 300px 1fr;
+  grid-template-rows: 250px 1fr;
   background: ${theme.colors.background};
-  box-shadow: 0px 0px 7px 1px ${theme.colors.stroke};
   overflow: hidden;
   height: 100%;
   cursor: pointer;
   transition: .3s;
   .product-image {
-    display: block;
+    display: flex;
     width: 100%;
     height: 100%;
+    border: 1px solid ${theme.colors.stroke};
+    justify-content: center;
+    align-items: center;
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      width: 90%;
+      height: 90%;
+      object-fit: contain;
     }
   }
 
@@ -30,13 +32,13 @@ const ProductStyled = styled.div`
     display: grid;
     grid-gap: 5px;
     padding: 10px;
-    h4 {
-      font-size: .95em;
-      font-weight: 600;
-      line-height: 1.4rem;
+    color: ${theme.colors.primary};
+    .product-name {
+      font-size: .85em;
+      font-weight: normal;
     }
     .price {
-      font-size: 1.2em;
+      font-size: 1em;
       font-weight: 800;
     }
     .discount {
@@ -49,7 +51,7 @@ const ProductStyled = styled.div`
 
   @media (min-width: 768px) {
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.02);
     }
   }
 `
@@ -69,7 +71,7 @@ const Product = ({ id, image, name, price, stock, category, brand, discount }) =
           <img onError={handleImageError} loading="lazy" src={img} alt={name}/>
         </figure>
         <div className="product-content">
-          <h4>{name}</h4>
+          <h4 className="product-name">{name}</h4>
           <div className="product-values">
             {discount && <p className="discount">{`$ ${discount}`}</p>}
             <p className="price">{`$ ${price}`}</p>
