@@ -1,9 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import Banner from '../../components/Common/Banner'
 import Button from '../../components/Common/Button'
-import banner from '../../static/images/banner.jpg'
-import { theme } from '../../theme'
 
 const HomeBannerStyled = styled.div`
   .banner-content {
@@ -23,6 +22,7 @@ const HomeBannerStyled = styled.div`
   }
 `
 const HomeBanner = () => {
+  const navigate = useNavigate()
   return (
     <HomeBannerStyled>
       <Banner>
@@ -30,7 +30,7 @@ const HomeBanner = () => {
           <div className="banner-content">
             <h1>descubre nuestra colección</h1>
             <p>Estamos ofreciendo un 20% de descuento</p>
-            <Button>Contactar</Button>
+            <Button onClick={() => navigate("/contacto")}>Contactar</Button>
           </div>
         </div>
       </Banner>

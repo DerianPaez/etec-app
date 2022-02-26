@@ -4,6 +4,7 @@ import Button from '../../components/Common/Button'
 import Link from '../../components/Common/Link'
 import imageWe from '../../assets/images/imageWe.png'
 import { theme } from '../../theme'
+import { useNavigate } from 'react-router-dom'
 
 const WeStyled = styled.section`
   display: grid;
@@ -67,6 +68,7 @@ const WeStyled = styled.section`
   }
 `
 const We = () => {
+  const navigate = useNavigate()
   return (
     <WeStyled>
       <div className="wrapper">
@@ -79,9 +81,7 @@ const We = () => {
             <p>
               Contamos con un grupo de profesionales ágil y eficaz en diferentes áreas, con alto grado de compromiso garantizando respuestas rápidas y eficientes. Atiende a personas naturales y jurídicas proporcionando productos y servicios múltiples a una extensa cartera de clientes.
             </p>
-            <Link to={`${window.location.origin}/#contacto-id`}>
-              <Button type="button">Contactar</Button>
-            </Link>
+            <Button onClick={() => navigate("/contacto")}>Contactar</Button>
           </div>
           <figure className="we-image">
             <img src={imageWe} alt="Etec imagen nosotros" />

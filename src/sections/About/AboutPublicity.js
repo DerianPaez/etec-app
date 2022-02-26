@@ -4,8 +4,9 @@ import aboutPublicityBackground from '../../assets/images/aboutPublicityBackgrou
 import { theme } from '../../theme'
 import Publicity from '../../components/Common/Publicity'
 import Button from '../../components/Common/Button'
+import { useNavigate } from 'react-router-dom'
 
-const AboutPublicityStyled = styled.div`
+const AboutPublicityStyled = styled.section`
   .publicity-container {
     display: grid;
     gap: 10px;
@@ -20,13 +21,14 @@ const AboutPublicityStyled = styled.div`
 `
 
 const AboutPublicity = () => {
+  const navigate = useNavigate()
   return (
     <AboutPublicityStyled>
       <div className="wrapper">
         <Publicity image={aboutPublicityBackground}>
           <div className="publicity-container">
             <h2>Descubre Nuestros Productos</h2>
-            <Button>Productos</Button>
+            <Button onClick={() => navigate("/productos")}>Productos</Button>
           </div>
         </Publicity>
       </div>

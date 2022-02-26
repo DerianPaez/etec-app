@@ -33,10 +33,12 @@ const GalleryElementStyled = styled.div`
 const GalleryElement = ({ name, text, background, url, className }) => {
   let navigate = useNavigate()
   const handleClick = () => {
-    if (url.startsWith('http') || url.startsWith('//')) {
-      window.open(url)
-    } else {
-      navigate(url)
+    if(url) {
+      if (url.startsWith('http') || url.startsWith('//')) {
+        window.open(url)
+      } else {
+        navigate(url)
+      }
     }
   }
   return (

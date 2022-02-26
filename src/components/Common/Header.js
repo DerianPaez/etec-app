@@ -91,7 +91,7 @@ const HeaderStyled = styled.header`
     justify-content: center;
     align-self: center;
     margin-bottom: 10px;
-    gap: 5px;
+    gap: 10px;
     figure {
       display: flex;
       justify-content: center;

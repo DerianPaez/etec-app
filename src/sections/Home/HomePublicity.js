@@ -4,6 +4,7 @@ import Button from '../../components/Common/Button'
 import homePublicityBackground from '../../assets/images/homePublicityBackground.png'
 import Publicity from '../../components/Common/Publicity'
 import { theme } from '../../theme'
+import { useNavigate } from 'react-router-dom'
 
 const HomePublicityStyled = styled.section`
   .publicity-container {
@@ -19,6 +20,7 @@ const HomePublicityStyled = styled.section`
   }
 `
 const HomePublicity = () => {
+  const navigate = useNavigate()
   return (
     <HomePublicityStyled>
       <div className="wrapper">
@@ -26,7 +28,7 @@ const HomePublicity = () => {
           <div className="publicity-container">
             <h2>Envios a todo el Ecuador</h2>
             <p>35% de descuento las 10 primeras personas</p>
-            <Button>Comprar</Button>
+            <Button onClick={() => navigate("/contacto")}>Contactar</Button>
           </div>
         </Publicity>
       </div>

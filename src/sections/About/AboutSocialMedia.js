@@ -5,7 +5,7 @@ import Button from '../../components/Common/Button'
 import Publicity from '../../components/Common/Publicity'
 import aboutSocialmediaBackground from '../../assets/images/aboutSocialmediaBackground.png'
 
-const AboutSocialMediaStyled = styled.div`
+const AboutSocialMediaStyled = styled.section`
   .social-media-container {
     display: grid;
     gap: 10px;
@@ -28,8 +28,8 @@ const AboutSocialMedia = () => {
           <div className="social-media-container">
             <h2>Siguenos en Nuestras Redes Sociales</h2>
             <div className="social-media-button-container">
-              <Button>Facebook</Button>
-              <Button>Instagram</Button>
+              <Button onClick={() => window.open("https://www.facebook.com/Encuentralotodoecuador")}>Facebook</Button>
+              <Button onClick={() => window.open("https://www.instagram.com/encuentralotodoecuador")}>Instagram</Button>
             </div>
           </div>
         </Publicity>

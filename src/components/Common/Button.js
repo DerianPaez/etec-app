@@ -18,10 +18,10 @@ const ButtonStyled = styled.button`
     background-color: #000;
   }
 `
-const Button = ({ children, type, action, className }) => {
+const Button = ({ children, type, onClick, className }) => {
   const handleClick = () => {
-    if (action) {
-      action()
+    if (onClick) {
+      onClick()
     }
   }
   return (
