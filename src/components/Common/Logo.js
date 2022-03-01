@@ -4,7 +4,7 @@ import Link from './Link'
 import { theme } from '../../theme'
 import logo from '../../assets/images/logo.png'
 
-const LogoStyled = styled.div`
+const LogoStyled = styled.figure`
   width: min-content;
   user-select: none;
   cursor: pointer;
@@ -13,9 +13,9 @@ const LogoStyled = styled.div`
     width: 160px;
   }
 `
-const Logo = () => {
+const Logo = ({ className }) => {
   return (
-    <LogoStyled>
+    <LogoStyled className={className}>
       <Link to="/">
         <img src={logo} alt="Logo Etec Rojo" />
       </Link>

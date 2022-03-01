@@ -4,12 +4,57 @@ import Logo from './Logo'
 import Link from './Link'
 import { theme } from '../../theme'
 import { menu } from '../../data/menu.data'
+import ContactInfoItem from './ContactInfoItem'
 
 const FooterStyled = styled.footer`
+  border-top: 1px solid ${theme.colors.stroke};
+
   .footer-content {
     display: grid;
+    grid-template-areas:
+      "logo"
+      "left"
+      "right";
+    justify-content: center;
     align-items: center;
-    padding: 25px 0;
+    padding: 15px 0;
+
+    .footer-logo {
+      justify-self: center;
+      grid-area: logo;
+    }
+
+    .left-info {
+      grid-area: left;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .left-info, .right-info {
+      display: grid;
+      gap: 10px;
+    }
+
+    .right-info {
+      grid-area: right;
+      display: grid;
+      gap: 10px;
+    }
+
+    @media (min-width: 768px) {
+      grid-template-areas:
+        "logo logo logo"
+        "left . right";
+      justify-content: initial;
+      .item-right {
+        flex-direction: row-reverse;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-areas:
+        "left logo right";
+    }
   }
 
   .footer-links {
@@ -102,8 +147,15 @@ const Footer = () => {
     <FooterStyled>
       <div className="wrapper">
         <div className="footer-content">
-          <Logo/>
-
+          <Logo className="footer-logo"/>
+          <div className="left-info">
+            <ContactInfoItem className="item-left" icon="location" text="Urdenor 2, Mz 225, Sl 13"/>
+            <ContactInfoItem className="item-left" icon="phone" text="+593 99 9999 999"/>
+          </div>
+          <div className="right-info">
+            <ContactInfoItem className="item-right" icon="mail" text="etecstore@hotmail.com"/>
+            <ContactInfoItem className="item-right" icon="clock" text="Atención desde 09:00 - 18:00"/>
+          </div>
         </div>
       </div>
       <div className="footer-links">
