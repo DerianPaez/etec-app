@@ -5,8 +5,10 @@ import Link from './Link'
 import { theme } from '../../theme'
 import { menu } from '../../data/menu.data'
 import ContactInfoItem from './ContactInfoItem'
+import { contactInfo } from '../../data/contactInfo.data'
 
 const FooterStyled = styled.footer`
+  margin-top: 40px;
   border-top: 1px solid ${theme.colors.stroke};
 
   .footer-content {
@@ -149,12 +151,31 @@ const Footer = () => {
         <div className="footer-content">
           <Logo className="footer-logo"/>
           <div className="left-info">
-            <ContactInfoItem className="item-left" icon="location" text="Urdenor 2, Mz 225, Sl 13"/>
-            <ContactInfoItem className="item-left" icon="phone" text="+593 99 9999 999"/>
+            <ContactInfoItem
+              className="item-left"
+              icon={contactInfo.location.icon}
+              text={contactInfo.location.text}
+              url={contactInfo.location.url}
+            />
+            <ContactInfoItem
+              className="item-left"
+              icon={contactInfo.phone.icon}
+              text={contactInfo.phone.text}
+              url={contactInfo.phone.url}
+            />
           </div>
           <div className="right-info">
-            <ContactInfoItem className="item-right" icon="mail" text="etecstore@hotmail.com"/>
-            <ContactInfoItem className="item-right" icon="clock" text="Atención desde 09:00 - 18:00"/>
+            <ContactInfoItem
+              className="item-right"
+              icon={contactInfo.mail.icon}
+              text={contactInfo.mail.text}
+              url={contactInfo.mail.url}
+            />
+            <ContactInfoItem
+              className="item-right"
+              icon={contactInfo.horary.icon}
+              text={contactInfo.horary.text}
+            />
           </div>
         </div>
       </div>

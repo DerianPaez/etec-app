@@ -4,7 +4,7 @@ import { Link as ReactRouterLink } from 'react-router-dom'
 const Link = ({ children, to = '', url, ...props }) => {
   if (url) to = url
 
-  if (to.startsWith('http') || to.startsWith('//')) {
+  if (to.startsWith('http') || to.startsWith('//') || to.startsWith('tel') || to.startsWith('mailto') ) {
     return (
       <a href={to} rel="noopener noreferrer" {...props}>
         {children}

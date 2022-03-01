@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { theme } from '../../theme'
 import Icon from './Icon'
+import Link from './Link'
 
 const ContactInfoItemStyled = styled.div`
   display: flex;
@@ -14,13 +15,22 @@ const ContactInfoItemStyled = styled.div`
   }
 `
 
-const ContactInfoItem = ({ icon, text, className }) => {
-  return (
+const ContactInfoItem = ({ className, icon, text, url }) => {
+
+  const HTML = (
     <ContactInfoItemStyled className={className}>
       <Icon icon={icon} width="50" height="50" color={theme.colors.primary}/>
       <p>{text}</p>
     </ContactInfoItemStyled>
   )
+
+  if(url) {
+    return (
+      <Link url={url}>{HTML}</Link>
+    )
+  }
+
+  return HTML
 }
 
 export default ContactInfoItem
