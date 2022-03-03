@@ -6,14 +6,14 @@ const BannerStyled = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  height: 85vh;
+  height: ${({ height }) => height ? height : "85vh"};
   display: grid;
   align-items: center;
 `
 
-const Banner = ({ children, image }) => {
+const Banner = ({ children, image, height }) => {
   return (
-    <BannerStyled backgroundUrl={image}>
+    <BannerStyled backgroundUrl={image} height={height}>
       {children}
     </BannerStyled>
   )

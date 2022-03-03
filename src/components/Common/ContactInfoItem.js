@@ -11,7 +11,11 @@ const ContactInfoItemStyled = styled.div`
   gap: 10px;
 
   p {
-    font-size: 1.1em;
+    font-size: .9em;
+
+    @media (min-width: 768px) {
+      font-size: 1.1em;
+    }
   }
 `
 
